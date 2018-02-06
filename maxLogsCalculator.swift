@@ -14,12 +14,6 @@ var maxTotalLength: Double = maxWeightCapacity / weightPerMetre
 print("Enter the length of the logs: ")
 var input = readLine(strippingNewline: true)
 print(input!)
-
-if let lengthOfLog: Double = Double(input!) {
-	print("option 1")
-} else {
-	print("option 2")
-}
-//print(lengthOfLog!)
-//var maxNumberOfLogs = maxTotalLength / lengthOfLog!
-//print("A maximum of \(maxNumberOfLogs) logs can fit on the truck.")
+var lengthOfLog = Double(input!)
+var maxNumberOfLogs = maxTotalLength / Double(input!)!
+print("A maximum of \(maxNumberOfLogs) logs can fit on the truck.")
